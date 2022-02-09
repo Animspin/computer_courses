@@ -1,0 +1,24 @@
+.promo {
+    padding: 40px 80px 0;
+    background: url('../img/main-screen__bg.png') no-repeat 50%/cover;
+    min-height: 960px;
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        &__navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 745px;
+        }
+        &__item {
+            a{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 150%;
+                color: #FFFFFF;
+                text-decoration: none;
+            } 
+        }
+    }
+}
