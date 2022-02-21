@@ -1,0 +1,94 @@
+.program {
+    min-height: 910px;
+    padding: 200px 0 0 0;
+    background: url('../img/bg.png');
+    &__title {
+        width: 485px;
+        margin: 0 auto;
+        position: relative;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 140%;
+        text-align: center;
+        color: #FFFFFF;
+        img {
+            position: absolute;
+            left: 50%;
+            top: -150px;
+            transform: rotate(135deg) translateX(66%);
+        }
+    }
+    &__descr {
+        width: 411px;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 30px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        color: #FFFFFF;
+        opacity: 0.5;
+    }
+    &__column {
+        &_right {
+            margin: auto 0;
+        }
+    }
+    &__weeks {
+        margin: 80px auto 0;
+        width: 734px;
+        display: grid;
+        grid-template-columns: 364px 6px 364px;
+    }
+    &__week {
+        position: relative;
+        padding: 0 60px;
+        margin-bottom: 100px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &_left {
+            text-align: right;
+            &::after {
+                content: '';
+                position: absolute;
+                top: 45px;
+                right: 0;
+                width: 40px;
+                height: 2px;
+                background: #FFFFFF;
+            }
+        }
+        &_right {
+            text-align: left;
+            &::after {
+                content: '';
+                position: absolute;
+                top: 45px;
+                left: 0;
+                width: 40px;
+                height: 2px;
+                background: #FFFFFF;
+            }
+        }
+    }
+    &__week-number {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 160%;
+        color: #FFFFFF;
+        opacity: 0.5;
+    }
+    &__text {
+        margin-top: 15px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 160%;
+        color: #FFFFFF;
+    }
+    &__divider {
+        width: 6px;
+        height: 677px;
+        background: $color-purple;
+    }
+}
