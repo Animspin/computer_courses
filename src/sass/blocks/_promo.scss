@@ -64,7 +64,7 @@
         background: #121212;
         .wrapper {
             display: flex;
-            justify-content: start;
+            justify-content: space-between;
             align-items: center;
             height: 130px;
             .counts {
@@ -92,14 +92,15 @@
                 }
             }
             .profit {
-                width: 400px;
+                width: 714px;
                 margin-left: 81px;
                 display: grid;
                 grid-template-rows: 24px 6px 24px;
                 row-gap: 5px;
                 .row {
+                    width: 714px;
                     display: grid;
-                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-columns: 178px 71px;
                     column-gap: 30px;
                     .title {
                         font-weight: 400;
@@ -118,7 +119,8 @@
                         color: #FFFFFF;
                     }
                     &_bottom {
-                        justify-content: space-around;
+                        justify-content: space-between;
+                        grid-template-columns: 71px 178px;
                     }
                     &_scale {
                         display: grid;

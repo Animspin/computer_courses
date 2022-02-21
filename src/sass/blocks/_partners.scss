@@ -1,0 +1,41 @@
+.partners {
+    min-height: 487px;
+    padding: 200px 0 0 0;
+    background: url('../img/bg.png');
+    &__title {
+        padding-left: 130px;
+        position: relative;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 140%;
+        color: #FFFFFF;
+        img {
+            position: absolute;
+            left: 0;
+            top: 0px;
+            transform: rotate(180deg);
+        }
+    }
+    &__items {
+        margin-top: 90px;
+        display: grid;
+        grid-template-rows: repeat(2, 150px);
+    }
+    &__row {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        border-bottom: 1px solid #fff;
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+    &__column {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        border-right: 1px solid #fff;
+        &:last-child {
+            border-right: none;
+        }
+    }
+}

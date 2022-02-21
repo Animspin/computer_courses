@@ -1,6 +1,6 @@
 .start {
     height: 542px;
-    padding: 200px 0;
+    padding: 200px 0 0 0;
     background: url('../img/bg.png');
     &__title {
         padding-left: 110px;
@@ -70,6 +70,7 @@
         }
         &_bottom {
             margin-top: 15px;
+            padding-right: 18px;
         }
     }
 }
