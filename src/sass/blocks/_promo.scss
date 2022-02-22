@@ -5,6 +5,9 @@
         padding: 40px 80px 0;
         display: flex;
         justify-content: space-between;
+        &__icon {
+            display: none;
+        }
         &__navigation {
             display: flex;
             justify-content: space-between;
