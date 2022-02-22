@@ -204,6 +204,7 @@
                 transition: left 0.3s ease 0s;
                 padding: 100px 0 0 0;
                 overflow: auto;
+                z-index: 1;
             }
             &__body._active {
                 left: 0;
@@ -257,6 +258,230 @@
             .date {
                 width: 100%;
             }
+        }
+    }
+    .about {
+        padding: 100px 0 0 0;
+        min-height: 670px;
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__squear {
+            width: 200px;
+            height: 200px;
+            border: 20px solid transparent;
+            border-image: $color-purple;
+            border-image-slice: 1;
+            margin: 0 auto;
+            img {
+                width: 150px;
+                height: 150px;
+                transform: translateY(40px);
+            }
+        }
+        &__descr {
+            margin-left: 0;
+            margin-top: 35px;
+        }
+        &__title {
+            font-size: 30px;
+        }
+        &__text {
+            margin-top: 20px;
+        }
+    }
+    .start {
+        height: 895px;
+        padding: 100px 0 0 0;
+        &__title {
+            font-size: 30px;
+            padding-left: 0;
+            text-align: center;
+            width: 200px;
+            margin: 0 auto;
+            img {
+                top: -50px;
+                left: 70px;
+                width: 50px;
+                height: 50px;
+            }
+        }
+        &__stat {
+            grid-template-columns: 50px 80px 150px;
+            grid-template-rows: 1fr;
+            column-gap: 10px;
+        }
+        &__row {
+            grid-template-rows: repeat(4,1fr);
+            grid-template-columns: 1fr;
+        }
+        &__column {
+            &_1 {
+                width: 80px;
+                height: 100%;
+                margin: 0 auto;
+                background: linear-gradient(180deg,#c89afc 9.51%,#7c6afa 90.23%);
+            }
+            &_2 {
+                width: 60px;
+                height: 100%;
+                margin: 0 auto;
+                background: linear-gradient(0deg,#c89afc 9.51%,#7c6afa 90.23%);
+            }
+            &_3 {
+                width: 30px;
+                height: 100%;
+                margin: 0 auto;
+                background: linear-gradient(180deg,#c89afc 9.51%,#7c6afa 90.23%);
+            }
+            &_4 {
+                width: 10px;
+                height: 100%;
+                margin: 0 auto;
+                background: linear-gradient(0deg,#c89afc 9.51%,#7c6afa 90.23%);
+            }
+        }
+        &__descr {
+            width: 300px;
+        }
+        &__column {
+            font-size: 12px;
+            &_title {
+                font-size: 20px;
+                text-align: center;
+            }
+            &_bottom {
+                padding-right: 0;
+                box-sizing: border-box;
+            }
+        }
+    }
+    .profession {
+        padding: 100px 0 0 0;
+        &__title {
+            font-size: 30px;
+        }
+    }
+    .partners {
+        padding: 100px 0 0 0;
+        &__title {
+            font-size: 30px;
+            padding-left: 0;
+            text-align: center;
+            width: 200px;
+            margin: 0 auto;
+            img {
+                top: -50px;
+                left: 70px;
+                width: 50px;
+                height: 50px;
+            }
+        }
+        &__items {
+            margin-top: 40px;
+            grid-template-columns: repeat(2,150px);
+            grid-template-rows: 1fr;
+        }
+        &__row {
+            grid-template-rows: repeat(4,1fr);
+            grid-template-columns: 1fr;
+            border-right: 1px solid #fff;
+            border-bottom: none;
+            &:last-child {
+                border-right: none;
+            }
+        }
+        &__column {
+            border-bottom: 1px solid #fff;
+            border-right: none;
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+    .program {
+        padding: 100px 0 0 0;
+        &__title {
+            font-size: 30px;
+            padding-left: 0;
+            text-align: center;
+            width: 200px;
+            margin: 0 auto;
+            img {
+                top: -75px;
+                left: 95px;
+                width: 50px;
+                height: 50px;
+            }
+        }
+        &__descr {
+            width: 300px;
+        }
+        &__weeks {
+            margin: 40px auto 0;
+            grid-template-columns: 147px 6px 147px;
+            width: 300px;
+        }
+        &__week {
+            padding: 0 10px;
+            &_left {
+                &::after {
+                    top: 30px;
+                }
+            }
+            &_right {
+                &::after {
+                    top: 30px;
+                }
+            }
+        }
+        &__divider {
+            height: 1020px;
+        }
+    }
+    .teachers {
+        padding: 100px 0 0 0;
+        &__title {
+            font-size: 30px;
+            padding-left: 0;
+            text-align: center;
+            width: 200px;
+            margin: 0 auto;
+            img {
+                top: -50px;
+                left: 75px;
+                width: 50px;
+                height: 50px;
+            }
+        }
+        &__items {
+            margin-top: 50px;
+            flex-direction: column;
+        }
+        &__item {
+            margin-bottom: 30px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .contacts {
+        padding: 100px 0 0 0;
+        &__title {
+            font-size: 30px;
+            padding-left: 0;
+            text-align: center;
+            width: 230px;
+            margin: 0 auto;
+        }
+        &__descr {
+            width: 300px;
+        }
+        &__email {
+            width: 270px;
+        }
+        &__social {
+            width: 240px;
         }
     }
 }
