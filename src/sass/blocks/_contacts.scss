@@ -50,6 +50,7 @@
         font-size: 16px;
         line-height: 150%;
         color: #FFFFFF;
+        cursor: pointer;
     }
     &__social {
         margin: 40px auto 0;
@@ -64,6 +65,7 @@
             height: 50px;
             border-radius: 100%;
             background: $color-purple;
+            cursor: pointer;
         }
     }
 }
